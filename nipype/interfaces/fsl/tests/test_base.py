@@ -14,7 +14,7 @@ import pytest
 def test_fslversion():
     ver = fsl.Info.version()
     ver = ver.split('.')
-    assert ver[0] in ['4', '5']
+    assert ver[0] in ['4', '5', '6']
 
 
 @pytest.mark.skipif(no_fsl(), reason="fsl is not installed")
